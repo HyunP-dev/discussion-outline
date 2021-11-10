@@ -1,0 +1,80 @@
+%!TEX TS-program = xelatex
+\documentclass{article}
+\usepackage[
+    left=2cm,
+    right=2cm,
+    top=1.5cm,
+    bottom=2cm,
+    a4paper
+]{geometry}
+
+\usepackage[cjk]{kotex}
+\usepackage{multirow}
+\usepackage{lipsum}  
+\usepackage{enumitem}
+\pagenumbering{gobble}
+\title{토론 개요서}
+\date{}
+
+\begin{document}
+\maketitle
+\noindent
+\begin{tabular}{|p{0.018\linewidth}|p{0.905\linewidth}p{0cm}|}
+    \hline
+    &
+    \begin{minipage}{0.9325\columnwidth}
+        \vspace*{0.2cm}
+        \textbf{심화논제:}
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        \vspace*{0.2cm}
+    \end{minipage}
+    &\\
+    \hline
+    &\begin{minipage}{0.9325\columnwidth}
+        \vspace*{0.2cm}
+        \centering
+        \textbf{찬성측(반대측)}
+        \vspace*{0.2cm}
+    \end{minipage}&\\
+    \hline
+    \multirow{2}{0cm}{
+        \begin{minipage}{0.02\textwidth}
+            \vspace*{-1cm}
+            논의배경\\\\및\\\\논점, 논거
+        \end{minipage}
+    }&
+    \begin{minipage}{0.9325\columnwidth}
+        \vspace*{0.2cm}
+        \textbf{[논의 배경]}\\
+        \lipsum[1]
+        \vspace*{0.2cm}
+    \end{minipage}&\\
+    \cline{2-3}
+    &\begin{minipage}{0.9325\columnwidth}
+        \vspace*{0.2cm}
+        \textbf{[논점 및 논거]}\\
+        \begin{enumerate}
+            \setlength{\leftskip}{-2.5truemm}
+            \item \lipsum[2]
+        \end{enumerate}
+        \vspace*{0.2cm}
+    \end{minipage}
+    &\\\hline
+    \begin{minipage}{0.02\textwidth}
+            반론논점\\\\및\\\\대책
+    \end{minipage}&
+    \begin{minipage}{0.9325\columnwidth}
+        \vspace*{0.2cm}
+        \textbf{[상대측 심화논제 논점에 대한 반론논점 및 대책]}\\
+        \begin{enumerate}
+        \setlength{\leftskip}{-2.5truemm}
+          \item \lipsum[3]
+          \item \lipsum[4]
+        \end{enumerate}
+        
+        \vspace*{0.2cm}
+    \end{minipage}
+    &\\
+    \hline
+    \end{tabular}
+\end{document}
